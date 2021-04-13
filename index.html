@@ -5,9 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap">
     <title>Portfolio Jitka Marešová</title>
 </head>
 <body>
+    <!--Header-->
+    <header>
+      <nav class="nav">
+          <ul class="nav__list"> 
+              <li class="nav__item nav__item--big"><a href="#home" class="nav__link">Úvod</a></li>
+              <li class="nav__item nav__item--bold"><a href="#services" class="nav__link">Moje služby</a></li>
+              <li class="nav__item nav__item--green"><a href="#about" class="nav__link">O mně</a></li>
+          </ul>
+      </nav>
+    </header>
 
+    <!--Intro-->
+    <section class="section section-intro" id="home">
+          <h1 class="section__title section__title--intro">Ahoj, já jsem <strong>Jitka Marešová</strong></h1>
+          <p class="section__subtitle section__subtitle--intro">tester & programmer</p>
+          <img src="img/ja.jpg" alt="jitka a psi">
+    </section>
+   
+   <!--Services-->
+    <section class="section section-my-services" id="services">
+        <h2 class="section__title section__title--services">Co dělám</h2>
+        <div class="section-my-services__services">
+            <div class="section-my-services__service section-my-services__service--purple">
+                <h3>Testování</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint error quod voluptates soluta, amet nihil, accusamus odit laborum magni illo nam quo numquam recusandae ab officia! Pariatur repellat aliquam illum.</p>
+                <img src="img/comp.jpeg" alt="">
+            </div>
+            <div class="section-my-services__service section-my-services__service--blue">
+                <h3>Programování v PHP</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In dicta earum fugit sunt molestiae, error inventore ut aliquam hic eveniet? Nobis sit molestias animi dolor odit non eius minus neque.</p>
+                <img src="img/php.jpeg" alt="">
+            </div>
+            <div class="section-my-services__service section-my-services__service--yellow">
+                <h3>Kódování & Javascript</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam cupiditate possimus doloremque dolorum velit reiciendis ducimus suscipit qui reprehenderit excepturi nesciunt esse aliquam, consequatur expedita animi recusandae. Exercitationem, incidunt placeat!</p>
+                <img src="img/coding.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--About me-->
+    <section class="section section-about" id="about">
+     <h2 class="section__title section__title--about">Kdo jsem </h2>
+     <p class="section__subtitle section__subtitle--about">Juniorní programátor a tester</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit perspiciatis consequuntur provident, aliquam ab, numquam quia libero unde ipsam consectetur, voluptatum magni. Temporibus similique repudiandae error saepe doloremque pariatur officiis?</p>
+     <img src="img/Ava&ja.jpg" alt="jitka a kůň">
+    </section>
+
+    <!--Footer-->
+    <footer class="footer footer--black">
+      <a href="mailto:jitkamares10@gamil.com">jitkamares10@gmail.com</a>
+    </footer>
 </body>
 </html>
