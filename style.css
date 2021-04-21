@@ -59,3 +59,16 @@ h3{
     padding: 0.25em;
 }
 
+.footer{
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.footer a{
+    color: white;
+}
+
+.footer--black{
+    background-color: #303030;
+}
