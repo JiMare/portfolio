@@ -59,6 +59,16 @@ h3{
     padding: 0.25em;
 }
 
+.section-my-services__service{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+h3{
+    grid-column-end: span 2;
+}
+
 .footer{
     text-align: center;
     padding: 1rem;
