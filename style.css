@@ -67,6 +67,30 @@ h3{
 
 h3{
     grid-column-end: span 2;
+    padding: 2rem;
+    font-size: 4rem;
+}
+
+.section-my-services__service--purple{
+    background-color: #8a218a;
+}
+
+.section-my-services__service--blue{
+    background-color: #3aa6d8;
+}
+
+.section-my-services__service--yellow{
+    background-color: #dada60;
+}
+
+p{
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+img{
+    padding: 2rem;
 }
 
 .footer{
