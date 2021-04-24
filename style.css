@@ -41,15 +41,35 @@ h3{
 
 .section__title{
  margin-bottom: .25em;
+ text-align: center;
+ font-size: 5rem;
+}
+
+
+.section__subtitle{
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.section-intro{
+    display: grid;
+    grid-template-areas: 
+      "photo .... .... ...."
+      "photo banner banner banner"
+      "photo .... .... ...."
+      ;
 }
 
 .section__title--intro{
     font-weight: 300;
 }
 
-.section__subtitle{
-    margin: 0;
-    font-size: 1.25rem;
+.section__subtitle--intro{
+   grid-area: banner;
+}
+
+.section__img--intro{
+    grid-area: photo;
 }
 
 .section__subtitle--intro,
@@ -61,7 +81,7 @@ h3{
 
 .section-my-services__service{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 4fr;
 }
 
@@ -91,6 +111,33 @@ p{
 
 img{
     padding: 2rem;
+}
+
+.section-about{
+    display: grid;
+    grid-template-areas: 
+      "side header header"
+      "side banner banner"
+      "side text text"
+      "side text text"
+    ;
+
+}
+
+.section__title--about{
+    grid-area: header;
+}
+
+.section__subtitle--about{
+    grid-area: banner;
+}
+
+.section__text--about{
+    grid-area: text;
+}
+
+.section__img--about{
+    grid-area: side;
 }
 
 .footer{
