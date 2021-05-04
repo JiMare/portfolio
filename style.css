@@ -41,15 +41,35 @@ h3{
 
 .section__title{
  margin-bottom: .25em;
+ text-align: center;
+ font-size: 5rem;
+}
+
+
+.section__subtitle{
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.section-intro{
+    display: grid;
+    grid-template-areas: 
+      "photo .... .... ...."
+      "photo banner banner banner"
+      "photo .... .... ...."
+      ;
 }
 
 .section__title--intro{
     font-weight: 300;
 }
 
-.section__subtitle{
-    margin: 0;
-    font-size: 1.25rem;
+.section__subtitle--intro{
+   grid-area: banner;
+}
+
+.section__img--intro{
+    grid-area: photo;
 }
 
 .section__subtitle--intro,
@@ -59,3 +79,77 @@ h3{
     padding: 0.25em;
 }
 
+.section-my-services__service{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 4fr;
+}
+
+h3{
+    grid-column-end: span 2;
+    padding: 2rem;
+    font-size: 4rem;
+}
+
+.section-my-services__service--purple{
+    background-color: #8a218a;
+}
+
+.section-my-services__service--blue{
+    background-color: #3aa6d8;
+}
+
+.section-my-services__service--yellow{
+    background-color: #dada60;
+}
+
+p{
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+img{
+    padding: 2rem;
+}
+
+.section-about{
+    display: grid;
+    grid-template-areas: 
+      "side header header"
+      "side banner banner"
+      "side text text"
+      "side text text"
+    ;
+
+}
+
+.section__title--about{
+    grid-area: header;
+}
+
+.section__subtitle--about{
+    grid-area: banner;
+}
+
+.section__text--about{
+    grid-area: text;
+}
+
+.section__img--about{
+    grid-area: side;
+}
+
+.footer{
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.footer a{
+    color: white;
+}
+
+.footer--black{
+    background-color: #303030;
+}
