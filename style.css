@@ -13,6 +13,30 @@ body{
     line-height: 1.6;
 }
 
+.nav{
+    margin: 0;
+    padding: 0;
+    background-color: #16e0bd;
+}
+
+.nav__item{
+    display: inline-block;
+}
+
+.nav__link{
+    display: inline-block;
+    text-decoration: none;
+    padding: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #303030;
+}
+
+.nav__list a:hover{
+    background-color: rgb(29, 238, 238);
+    color: white;
+}
+
 img{
     max-width: 100%;
     display: block;
