@@ -1,0 +1,183 @@
+*, 
+*::before, 
+*::after{
+    box-sizing: border-box;
+}
+
+$mainBackgroundColor: #fff;
+$mainTextColor: #303030;    
+$bannerColor: #16e0bd;
+$javascriptColor: #dada60;
+$phpColor: #3aa6d8;
+$testingcolor: #8a218a;
+$strong: 900;
+$slim: 300;
+$sizeOneRem: 1rem;
+$sizeTwoRem: 2rem;
+
+@mixin servicesGrid() {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 4fr;
+}
+
+@mixin inline(){
+    display: inline-block;
+}
+
+body{
+    background: $mainBackgroundColor;
+    color: $mainTextColor;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: $sizeOneRem;
+    line-height: 1.6;
+}
+
+.nav{
+    margin: 0;
+    padding: 0;
+    background-color: $bannerColor;
+}
+
+.nav__item{
+    @include inline();
+}
+
+.nav__link{
+    @include inline();
+    text-decoration: none;
+    padding: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: $mainTextColor;
+}
+
+.nav__list a {
+    &:hover {
+    background-color: $bannerColor;
+    color: $mainBackgroundColor; }
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    padding: $sizeTwoRem;
+}
+
+strong {
+    font-weight: $strong;
+}
+
+h1,h2,h3 {
+    line-height: 1.1;
+    margin: 0;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2.25rem;
+}
+
+h3{
+    grid-column-end: span 2;
+    padding: $sizeTwoRem;
+    font-size: 4rem;
+}
+
+p{
+    padding: $sizeTwoRem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.section {
+    &-intro {
+        display: grid;
+        grid-template-areas: 
+        "photo .... .... ...."
+        "photo banner banner banner"
+        "photo .... .... ...."
+        ;
+    }
+    &-about {
+        display: grid;
+        grid-template-areas: 
+        "side header header"
+        "side banner banner"
+        "side text text"
+        "side text text"
+        ;
+    }
+    &__title {
+        margin-bottom: .25em;
+        text-align: center;
+        font-size: 5rem;
+        &--intro {
+            font-weight: $slim;
+        }
+        &--about {
+            grid-area: header;
+        }
+    }
+    &__subtitle {
+        margin: 0;
+        font-size: 1.25rem; 
+        &--about {
+            background: $bannerColor;
+            font-family: 'Source Code Pro', monospace;
+            padding: 0.25em;
+            grid-area: banner;
+        }
+        &--intro {
+            background: $bannerColor;
+            font-family: 'Source Code Pro', monospace;
+            padding: 0.25em;
+            grid-area: banner;
+        }
+    }
+}
+
+
+.section__img {
+    &--intro{
+        grid-area: photo; }
+    &--about {
+        grid-area: side;
+    }
+}
+
+.section-my-services__service{
+    @include servicesGrid();
+    &--purple {
+        background-color: $testingcolor;
+    }
+    &--blue {
+        background-color: $phpColor;
+    }
+    &--yellow {
+        background-color: $javascriptColor;
+    }
+}
+
+.section__text--about{
+    grid-area: text;
+}
+
+
+.footer{
+    text-align: center;
+    padding: $sizeOneRem;
+    margin-top: $sizeOneRem;
+}
+
+.footer a{
+    color: $mainBackgroundColor;
+}
+
+.footer--black{
+    background-color: $mainTextColor;
+}

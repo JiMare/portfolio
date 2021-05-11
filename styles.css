@@ -1,0 +1,187 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  color: #303030;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+  background-color: #16e0bd;
+}
+
+.nav__item {
+  display: inline-block;
+}
+
+.nav__link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #303030;
+}
+
+.nav__list a:hover {
+  background-color: #16e0bd;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  padding: 2rem;
+}
+
+strong {
+  font-weight: 900;
+}
+
+h1, h2, h3 {
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+  padding: 2rem;
+  font-size: 4rem;
+}
+
+p {
+  padding: 2rem;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.section-intro {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "photo .... .... ...." "photo banner banner banner" "photo .... .... ....";
+}
+
+.section-about {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "side header header" "side banner banner" "side text text" "side text text";
+}
+
+.section__title {
+  margin-bottom: .25em;
+  text-align: center;
+  font-size: 5rem;
+}
+
+.section__title--intro {
+  font-weight: 300;
+}
+
+.section__title--about {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+}
+
+.section__subtitle {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.section__subtitle--about {
+  background: #16e0bd;
+  font-family: 'Source Code Pro', monospace;
+  padding: 0.25em;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: banner;
+}
+
+.section__subtitle--intro {
+  background: #16e0bd;
+  font-family: 'Source Code Pro', monospace;
+  padding: 0.25em;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: banner;
+}
+
+.section__img--intro {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: photo;
+}
+
+.section__img--about {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  grid-area: side;
+}
+
+.section-my-services__service {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr 4fr;
+      grid-template-rows: 1fr 4fr;
+}
+
+.section-my-services__service--purple {
+  background-color: #8a218a;
+}
+
+.section-my-services__service--blue {
+  background-color: #3aa6d8;
+}
+
+.section-my-services__service--yellow {
+  background-color: #dada60;
+}
+
+.section__text--about {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: text;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer--black {
+  background-color: #303030;
+}
+/*# sourceMappingURL=styles.css.map */
