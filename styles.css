@@ -42,6 +42,7 @@ img {
   max-width: 100%;
   display: block;
   padding: 2rem;
+  border-radius: 4rem;
 }
 
 strong {
@@ -68,10 +69,25 @@ h3 {
   font-size: 4rem;
 }
 
+h4 {
+  padding: 2rem;
+  margin-top: -3rem;
+  font-size: 2rem;
+}
+
 p {
   padding: 2rem;
   font-size: 1.5rem;
   color: black;
+}
+
+ul {
+  padding: 2rem;
+  margin-top: -3.5rem;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  color: black;
+  list-style-type: none;
 }
 
 .section-intro {
@@ -156,7 +172,7 @@ p {
 }
 
 .section-my-services__service--blue {
-  background-color: #3aa6d8;
+  background-color: #1289c0;
 }
 
 .section-my-services__service--yellow {
@@ -169,6 +185,175 @@ p {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: text;
+}
+
+svg {
+  padding: 2rem;
+}
+
+svg:hover {
+  cursor: pointer;
+}
+
+@-webkit-keyframes become-blue {
+  to {
+    fill: #6c63ff;
+  }
+}
+
+@keyframes become-blue {
+  to {
+    fill: #6c63ff;
+  }
+}
+
+@-webkit-keyframes become-light {
+  to {
+    fill: #e6e6e6;
+  }
+}
+
+@keyframes become-light {
+  to {
+    fill: #e6e6e6;
+  }
+}
+
+@-webkit-keyframes blick {
+  50% {
+    fill: #6c63ff;
+  }
+  100% {
+    fill: #e6e6e6;
+  }
+}
+
+@keyframes blick {
+  50% {
+    fill: #6c63ff;
+  }
+  100% {
+    fill: #e6e6e6;
+  }
+}
+
+#b4e9d833-dfac-4889-b0f2-073e524f4cae:hover #comp {
+  -webkit-animation-name: become-light;
+          animation-name: become-light;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#b4e9d833-dfac-4889-b0f2-073e524f4cae:hover #rect1 {
+  -webkit-animation-name: become-light;
+          animation-name: become-light;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+#b4e9d833-dfac-4889-b0f2-073e524f4cae:hover #rect2 {
+  -webkit-animation-name: become-blue;
+          animation-name: become-blue;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+#b4e9d833-dfac-4889-b0f2-073e524f4cae:hover #rect3 {
+  -webkit-animation-name: become-blue;
+          animation-name: become-blue;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+#b4e9d833-dfac-4889-b0f2-073e524f4cae:hover #narrow {
+  -webkit-animation-name: become-blue;
+          animation-name: become-blue;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+#b4e9d833-dfac-4889-b0f2-073e524f4cae:hover #circle1 {
+  -webkit-animation-name: blick;
+          animation-name: blick;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+#b4e9d833-dfac-4889-b0f2-073e524f4cae:hover #circle2 {
+  -webkit-animation-name: blick;
+          animation-name: blick;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+#b4e9d833-dfac-4889-b0f2-073e524f4cae:hover #circle3 {
+  -webkit-animation-name: blick;
+          animation-name: blick;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.p {
+  margin-left: 2rem;
+  border-radius: 2rem;
+}
+
+.p--test {
+  background-color: #9b539b;
+}
+
+.p--php {
+  background-color: #3aa6d8;
+  margin-right: 2rem;
+}
+
+.p--js {
+  background-color: #acac75;
+}
+
+.ul {
+  border-radius: 2rem;
+}
+
+.ul--test {
+  background-color: #9b539b;
+}
+
+.ul--php {
+  background-color: #3aa6d8;
+  margin-right: 2rem;
+}
+
+.ul--js {
+  background-color: #acac75;
+}
+
+.content {
+  margin-top: -3rem;
 }
 
 .footer {
