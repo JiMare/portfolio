@@ -242,27 +242,99 @@ svg:hover {
     }
     & #circle1{
         animation-name: blick;
-        animation-duration: 2s;
+        animation-duration: 1s;
         animation-iteration-count: infinite;
     }
     & #circle2{
         animation-name: blick;
-        animation-duration: 2s;
-        animation-delay: 1s; 
+        animation-duration: 1s;
+        animation-delay: 0.33s; 
         animation-iteration-count: infinite;
    
     }
     & #circle3{
         animation-name: blick;
-        animation-duration: 2s;
-        animation-delay: 2s;
+        animation-duration: 1s;
+        animation-delay: 0.66s;
         animation-iteration-count: infinite;
     }
-    
-
-
 }
 
+@keyframes move {
+    to {
+        transform: translate(-250px, -156px);
+    }
+}
+
+@keyframes become-purple {
+    to {
+        fill: #6c63ff;
+    }
+}
+
+@keyframes blick-black {
+    50% {
+        fill: #3f3d56;
+    }
+    100%{
+        fill: #6c63ff;
+    }
+}
+
+@keyframes become-black {
+    to {
+        fill: #3f3d56;
+    }
+}
+
+#php-svg:hover {
+    & #cup {
+        animation-name: move;
+        animation-duration: 8s;
+        animation-fill-mode: forwards;
+
+    }
+    & #cup-circle{
+        animation-name: move;
+        animation-duration: 8s;
+        animation-fill-mode: forwards;
+    }
+    & #phpcircle2 {
+        animation-name: become-purple;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+    & #phpcircle3 {
+        animation-name: become-light;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+    & #phpcircle4 {
+        animation-name: become-purple;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
+    & #phpcircle6 {
+        animation-name: blick-black;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+    }
+    & #phpcircle8 {
+        animation-name: blick-black;
+        animation-duration: 2s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+    }
+    & #phpcircle9 {
+        animation-name: become-black;
+        animation-duration: 2s;
+        animation-delay: 5s;
+        animation-fill-mode: forwards;
+    }
+}
 
 
 .p{

@@ -289,8 +289,8 @@ svg:hover {
 #b4e9d833-dfac-4889-b0f2-073e524f4cae:hover #circle1 {
   -webkit-animation-name: blick;
           animation-name: blick;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -298,10 +298,10 @@ svg:hover {
 #b4e9d833-dfac-4889-b0f2-073e524f4cae:hover #circle2 {
   -webkit-animation-name: blick;
           animation-name: blick;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.33s;
+          animation-delay: 0.33s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -309,12 +309,150 @@ svg:hover {
 #b4e9d833-dfac-4889-b0f2-073e524f4cae:hover #circle3 {
   -webkit-animation-name: blick;
           animation-name: blick;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.66s;
+          animation-delay: 0.66s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes move {
+  to {
+    -webkit-transform: translate(-250px, -156px);
+            transform: translate(-250px, -156px);
+  }
+}
+
+@keyframes move {
+  to {
+    -webkit-transform: translate(-250px, -156px);
+            transform: translate(-250px, -156px);
+  }
+}
+
+@-webkit-keyframes become-purple {
+  to {
+    fill: #6c63ff;
+  }
+}
+
+@keyframes become-purple {
+  to {
+    fill: #6c63ff;
+  }
+}
+
+@-webkit-keyframes blick-black {
+  50% {
+    fill: #3f3d56;
+  }
+  100% {
+    fill: #6c63ff;
+  }
+}
+
+@keyframes blick-black {
+  50% {
+    fill: #3f3d56;
+  }
+  100% {
+    fill: #6c63ff;
+  }
+}
+
+@-webkit-keyframes become-black {
+  to {
+    fill: #3f3d56;
+  }
+}
+
+@keyframes become-black {
+  to {
+    fill: #3f3d56;
+  }
+}
+
+#php-svg:hover #cup {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#php-svg:hover #cup-circle {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#php-svg:hover #phpcircle2 {
+  -webkit-animation-name: become-purple;
+          animation-name: become-purple;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#php-svg:hover #phpcircle3 {
+  -webkit-animation-name: become-light;
+          animation-name: become-light;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#php-svg:hover #phpcircle4 {
+  -webkit-animation-name: become-purple;
+          animation-name: become-purple;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#php-svg:hover #phpcircle6 {
+  -webkit-animation-name: blick-black;
+          animation-name: blick-black;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#php-svg:hover #phpcircle8 {
+  -webkit-animation-name: blick-black;
+          animation-name: blick-black;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#php-svg:hover #phpcircle9 {
+  -webkit-animation-name: become-black;
+          animation-name: become-black;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .p {
