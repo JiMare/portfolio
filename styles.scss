@@ -8,7 +8,7 @@ $mainBackgroundColor: #fff;
 $mainTextColor: #303030;    
 $bannerColor: #16e0bd;
 $javascriptColor: #dada60;
-$phpColor: #3aa6d8;
+$phpColor: #1289c0;
 $testingcolor: #8a218a;
 $strong: 900;
 $slim: 300;
@@ -63,6 +63,7 @@ img{
     max-width: 100%;
     display: block;
     padding: $sizeTwoRem;
+    border-radius: 4rem;
 }
 
 strong {
@@ -88,10 +89,25 @@ h3{
     font-size: 4rem;
 }
 
+h4{
+    padding: $sizeTwoRem;
+    margin-top: -3rem;
+    font-size: $sizeTwoRem  ;
+}
+
 p{
     padding: $sizeTwoRem;
     font-size: 1.5rem;
     color: black;
+}
+
+ul {
+    padding: 2rem;
+    margin-top: -3.5rem;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    color: black;
+    list-style-type: none
 }
 
 .section {
@@ -167,6 +183,192 @@ p{
     grid-area: text;
 }
 
+svg{
+    padding: $sizeTwoRem;
+}
+
+svg:hover {
+    cursor: pointer;
+}
+
+
+@keyframes become-blue {
+    to {
+        fill: #6c63ff;
+    }
+}
+
+@keyframes become-light {
+    to {
+        fill: #e6e6e6;  
+    }
+}
+
+@keyframes blick {
+    50% {
+        fill: #6c63ff;
+    }
+    100%{
+        fill: #e6e6e6;  
+    }
+}
+#b4e9d833-dfac-4889-b0f2-073e524f4cae:hover {
+    & #comp{
+      animation-name: become-light;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+    & #rect1{
+        animation-name: become-light;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    & #rect2{
+        animation-name: become-blue;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    } 
+    & #rect3{
+        animation-name: become-blue;
+        animation-duration: 5s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+    } 
+    & #narrow{
+        animation-name: become-blue;
+        animation-duration: 5s;
+        animation-delay: 5s;
+        animation-iteration-count: infinite;
+    }
+    & #circle1{
+        animation-name: blick;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    & #circle2{
+        animation-name: blick;
+        animation-duration: 1s;
+        animation-delay: 0.33s; 
+        animation-iteration-count: infinite;
+   
+    }
+    & #circle3{
+        animation-name: blick;
+        animation-duration: 1s;
+        animation-delay: 0.66s;
+        animation-iteration-count: infinite;
+    }
+}
+
+@keyframes move {
+    to {
+        transform: translate(-250px, -156px);
+    }
+}
+
+@keyframes become-purple {
+    to {
+        fill: #6c63ff;
+    }
+}
+
+@keyframes blick-black {
+    50% {
+        fill: #3f3d56;
+    }
+    100%{
+        fill: #6c63ff;
+    }
+}
+
+@keyframes become-black {
+    to {
+        fill: #3f3d56;
+    }
+}
+
+#php-svg:hover {
+    & #cup {
+        animation-name: move;
+        animation-duration: 8s;
+        animation-fill-mode: forwards;
+
+    }
+    & #cup-circle{
+        animation-name: move;
+        animation-duration: 8s;
+        animation-fill-mode: forwards;
+    }
+    & #phpcircle2 {
+        animation-name: become-purple;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+    & #phpcircle3 {
+        animation-name: become-light;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+    & #phpcircle4 {
+        animation-name: become-purple;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
+    & #phpcircle6 {
+        animation-name: blick-black;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+    }
+    & #phpcircle8 {
+        animation-name: blick-black;
+        animation-duration: 2s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+    }
+    & #phpcircle9 {
+        animation-name: become-black;
+        animation-duration: 2s;
+        animation-delay: 5s;
+        animation-fill-mode: forwards;
+    }
+}
+
+
+.p{
+    margin-left: $sizeTwoRem;
+    border-radius: $sizeTwoRem;
+    &--test{
+        background-color: #9b539b;     
+    }
+    &--php{
+        background-color: #3aa6d8;
+        margin-right: $sizeTwoRem;
+    }
+    &--js{
+        background-color: #acac75;
+    }
+}
+
+.ul{
+    border-radius: $sizeTwoRem;
+    &--test{
+        background-color: #9b539b;
+    }
+    &--php{
+        background-color: #3aa6d8;
+        margin-right: $sizeTwoRem;
+    }
+    &--js{
+        background-color: #acac75;
+    }
+}
+
+.content {
+    margin-top: -3rem;
+}
 
 .footer{
     text-align: center;
