@@ -75,6 +75,10 @@ header{
     }
 }
 
+.span--intro:hover{
+    color: $bannerColor;
+}
+
 img{
     max-width: 100%;
     display: block;
