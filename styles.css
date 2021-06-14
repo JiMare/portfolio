@@ -36,10 +36,6 @@ header {
           align-items: center;
 }
 
-.nav__item {
-  display: inline-block;
-}
-
 .nav__link {
   display: inline-block;
   text-decoration: none;
@@ -58,6 +54,12 @@ header {
 .nav__list a:hover {
   background-color: #16e0bd;
   color: #fff;
+}
+
+@media (min-width: 768px) {
+  .nav__item {
+    display: inline-block;
+  }
 }
 
 img {

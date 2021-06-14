@@ -48,10 +48,6 @@ header{
     align-items: center;
 }
 
-.nav__item{
-    @include inline();
-}
-
 .nav__link{
     @include inline();
     text-decoration: none;
@@ -73,12 +69,19 @@ header{
     color: $mainBackgroundColor; }
 }
 
+@media (min-width: 768px ){
+    .nav__item{
+        @include inline();
+    }
+}
+
 img{
     max-width: 100%;
     display: block;
     padding: $sizeTwoRem;
     border-radius: 4rem;
 }
+
 
 strong {
     font-weight: $strong;
