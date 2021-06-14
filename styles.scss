@@ -34,10 +34,18 @@ body{
     line-height: 1.6;
 }
 
+header{
+    position: sticky;
+    top: 0;
+}
 .nav{
     margin: 0;
-    padding: 0;
+    padding: $sizeOneRem;
+    padding-bottom: 0;
     background-color: $bannerColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav__item{
@@ -47,10 +55,16 @@ body{
 .nav__link{
     @include inline();
     text-decoration: none;
-    padding: 30px;
-    font-size: 25px;
+    margin-top: $sizeOneRem;
+    padding: $sizeOneRem;
+    padding-bottom: 0;
+    font-size: $sizeTwoRem;
     font-weight: bold;
     color: $mainTextColor;
+}
+
+.nav__list{
+    padding-bottom: 0;
 }
 
 .nav__list a {
@@ -112,6 +126,7 @@ ul {
 
 .section {
     &-intro {
+        margin-top: 4rem;
         display: grid;
         grid-template-areas: 
         "photo .... .... ...."

@@ -14,10 +14,26 @@ body {
   line-height: 1.6;
 }
 
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 .nav {
   margin: 0;
-  padding: 0;
+  padding: 1rem;
+  padding-bottom: 0;
   background-color: #16e0bd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav__item {
@@ -27,10 +43,16 @@ body {
 .nav__link {
   display: inline-block;
   text-decoration: none;
-  padding: 30px;
-  font-size: 25px;
+  margin-top: 1rem;
+  padding: 1rem;
+  padding-bottom: 0;
+  font-size: 2rem;
   font-weight: bold;
   color: #303030;
+}
+
+.nav__list {
+  padding-bottom: 0;
 }
 
 .nav__list a:hover {
@@ -91,6 +113,7 @@ ul {
 }
 
 .section-intro {
+  margin-top: 4rem;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "photo .... .... ...." "photo banner banner banner" "photo .... .... ....";
